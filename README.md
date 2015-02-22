@@ -1,6 +1,6 @@
 # KMDAlertView
 Custom alert view with background blacked out and easy to use delegate methods
-
+![alt tag](https://github.com/kmdarshan/KMDAlertView/blob/master/Screen%20Shot%202015-02-22%20at%201.24.53%20PM.png)
 Using this alert view<br><br>
 
 ```obj-c
