@@ -14,6 +14,7 @@
 		7C0AE3CD1A9A6BAD00A63DC1 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7C0AE3CC1A9A6BAD00A63DC1 /* Images.xcassets */; };
 		7C0AE3D01A9A6BAD00A63DC1 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7C0AE3CE1A9A6BAD00A63DC1 /* LaunchScreen.xib */; };
 		7C0AE3DC1A9A6BAD00A63DC1 /* AlertTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 7C0AE3DB1A9A6BAD00A63DC1 /* AlertTests.m */; };
+		7C0AE3E71A9A6C1B00A63DC1 /* KMDAlert.m in Sources */ = {isa = PBXBuildFile; fileRef = 7C0AE3E61A9A6C1B00A63DC1 /* KMDAlert.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -40,6 +41,8 @@
 		7C0AE3D51A9A6BAD00A63DC1 /* AlertTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AlertTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		7C0AE3DA1A9A6BAD00A63DC1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		7C0AE3DB1A9A6BAD00A63DC1 /* AlertTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AlertTests.m; sourceTree = "<group>"; };
+		7C0AE3E51A9A6C1B00A63DC1 /* KMDAlert.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KMDAlert.h; sourceTree = "<group>"; };
+		7C0AE3E61A9A6C1B00A63DC1 /* KMDAlert.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KMDAlert.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -89,6 +92,8 @@
 				7C0AE3CC1A9A6BAD00A63DC1 /* Images.xcassets */,
 				7C0AE3CE1A9A6BAD00A63DC1 /* LaunchScreen.xib */,
 				7C0AE3BF1A9A6BAD00A63DC1 /* Supporting Files */,
+				7C0AE3E51A9A6C1B00A63DC1 /* KMDAlert.h */,
+				7C0AE3E61A9A6C1B00A63DC1 /* KMDAlert.m */,
 			);
 			path = Alert;
 			sourceTree = "<group>";
@@ -220,6 +225,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				7C0AE3C81A9A6BAD00A63DC1 /* ViewController.m in Sources */,
+				7C0AE3E71A9A6C1B00A63DC1 /* KMDAlert.m in Sources */,
 				7C0AE3C51A9A6BAD00A63DC1 /* AppDelegate.m in Sources */,
 				7C0AE3C21A9A6BAD00A63DC1 /* main.m in Sources */,
 			);

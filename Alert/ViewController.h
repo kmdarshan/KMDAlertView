@@ -7,9 +7,8 @@
 //
 
 #import <UIKit/UIKit.h>
-
-@interface ViewController : UIViewController
-
+#import "KMDAlert.h"
+@interface ViewController : UIViewController<KMDAlertDelegate>
 
 @end
 
