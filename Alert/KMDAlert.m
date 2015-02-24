@@ -58,21 +58,29 @@
 -(void) setUpOk {
     backgroundView = [[UIView alloc] initWithFrame:CGRectMake(0, 0, [[UIScreen mainScreen] bounds].size.width, [[UIScreen mainScreen] bounds].size.height)];
     backgroundView.backgroundColor = [UIColor blackColor];
-    backgroundView.alpha = 0.6;
+    backgroundView.alpha = 0;
+    [UIView animateWithDuration:0.5 animations:^{
+        backgroundView.alpha = 0.6f;
+    } completion:^(BOOL finished) {
+        [self performSelector:@selector(showAlert) withObject:nil afterDelay:0];
+    }];
     [[[[UIApplication sharedApplication] delegate] window] addSubview:backgroundView];
-
     alert = [[UIAlertView alloc] initWithTitle:title message:message delegate:self cancelButtonTitle:nil otherButtonTitles:okButton, nil];
+}
+-(void) showAlert {
     [alert show];
 }
-
 -(void) setUpCancel {
     backgroundView = [[UIView alloc] initWithFrame:CGRectMake(0, 0, [[UIScreen mainScreen] bounds].size.width, [[UIScreen mainScreen] bounds].size.height)];
     backgroundView.backgroundColor = [UIColor blackColor];
-    backgroundView.alpha = 0.6;
+    backgroundView.alpha = 0;
+    [UIView animateWithDuration:0.5 animations:^{
+        backgroundView.alpha = 0.6f;
+    } completion:^(BOOL finished) {
+        [self performSelector:@selector(showAlert) withObject:nil afterDelay:0];
+    }];
     [[[[UIApplication sharedApplication] delegate] window] addSubview:backgroundView];
-    
     alert = [[UIAlertView alloc] initWithTitle:title message:message delegate:self cancelButtonTitle:cancelButton otherButtonTitles:okButton, nil];
-    [alert show];
 }
 
 #pragma mark - Alert view delegates
